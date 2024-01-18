@@ -6,17 +6,18 @@ import PropTypes from "prop-types";
 import "../css/home.css";
 
 const Home = ({ title, children }) => {
-  const footerContent = 'フッターのコンテンツ内容';
-  const headerContent = 'ヘッダーのコンテンツ内容';
+  const footerContent = "フッターのコンテンツ内容";
+  const headerContent = "ヘッダーのコンテンツ内容";
 
   return (
     <div className="container">
       <Header content={headerContent} />
       <h1>{title}</h1>
+      <div>aaa</div>
       <div>ホーム画面のコンテンツ内容</div>
       <Counter />
       <div>{children}</div>
-      <Footer content={footerContent}/>
+      <Footer content={footerContent} />
     </div>
   );
 };
